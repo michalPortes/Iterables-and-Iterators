@@ -1,0 +1,17 @@
+from itertools import combinations
+
+n = input()
+
+l = list(input().split( ' ' ))
+
+k = int(input())
+
+c = 0
+
+for i in combinations(l,k):
+
+    if 'a' in i:
+
+        c+=1
+
+print(c/len(list(combinations(l,k))))
